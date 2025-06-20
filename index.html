@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shori Express - Parrilla y Domicilios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="site-title">SHORI EXPRESS</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="loginBtn" class="login-button">Login</button>
+        </div>
+    </header>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" value="adrian" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-button">Entrar</button>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </form>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="content-area">
+            <article class="main-article">
+                <h2>Descubre el Sabor Inigualable de Shori Express</h2>
+                <p class="article-meta">Tu parrilla favorita, ahora a tu domicilio. ¡Píde ya!</p>
+                <div class="image-placeholder">
+                    <div class="carousel-container">
+                        <div class="carousel-slide fade">
+                            <img src="plato1.webp" alt="Plato Parrilla Shori 1">
+                        </div>
+                        <div class="carousel-slide fade">
+                            <img src="plato2.webp" alt="Plato Parrilla Shori 2">
+                        </div>
+                        <div class="carousel-slide fade">
+                            <img src="plato3.webp" alt="Plato Parrilla Shori 3">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <p>En Shori Express, hemos evolucionado para llevar la auténtica experiencia de "Parrilla Shori" directamente a tu mesa. Disfruta de nuestras carnes a la parrilla, preparadas con la pasión y el sabor que ya conoces, ahora con la comodidad de pedirlas desde cualquier lugar.</p>
+                <p>Nuestra misión es sencilla: ofrecerte la más alta calidad en cada bocado, combinada con un servicio de domicilio rápido y eficiente. Sabemos que tu tiempo es valioso, por eso Shori Express está diseñado para que disfrutes de tu comida favorita sin complicaciones.</p>
+            </article>
+
+            <article class="secondary-article">
+                <h2>Tu Pedido en un Clic: La Experiencia de Domicilio Más Sencilla</h2>
+                <p class="article-meta">Comodidad y rapidez al alcance de tu mano.</p>
+                <p>Olvídate de las esperas y las llamadas complicadas. Con nuestra plataforma Shori Express, ordenar tus platos favoritos es más fácil que nunca. Navega por nuestro menú, selecciona lo que más te apetezca, personaliza tu pedido y en pocos clics, estará en camino a tu puerta.</p>
+                <p>Nuestro sistema de pedidos en línea es intuitivo y seguro. Podrás elegir entre diversas opciones de pago y realizar un seguimiento en tiempo real del estado de tu pedido, desde que se prepara en nuestra cocina hasta que llega a tus manos. ¡La parrilla nunca estuvo tan cerca!</p>
+            </article>
+
+            <article class="secondary-article">
+                <h2>Disfruta y Gana: Nuestro Programa de Fidelización Shori Rewards</h2>
+                <p class="article-meta">Valoramos tu preferencia. ¡Empieza a acumular puntos!</p>
+                <p>En Shori Express, cada pedido cuenta. Queremos premiar tu lealtad con nuestro exclusivo programa Shori Rewards. Por cada compra que realices, acumularás puntos que podrás canjear por descuentos especiales, bonos o incluso platos gratis en futuras órdenes.</p>
+                <p>Es nuestra forma de agradecerte por elegirnos. Mantente atento a las notificaciones y promociones exclusivas para miembros de Shori Rewards. ¡Mientras más disfrutes de nuestra parrilla, más beneficios obtendrás!</p>
+            </article>
+
+        </section>
+
+        <aside class="sidebar">
+            <section class="about-us">
+                <h2>Sobre Shori Express</h2>
+                <div class="pig-logo-container">
+                    <img src="img/SHORIp.png" alt="Logo Shori Express - Cerdo" class="pig-logo">
+                </div>
+                <p>Somos Shori Express, la evolución de la reconocida 'Parrilla Shori'. Mantenemos la tradición y la calidad de nuestras carnes a la parrilla, pero ahora con la comodidad de llevarlas directamente a tu hogar u oficina.</p>
+                <p>Nos comprometemos a brindarte la mejor experiencia gastronómica, con un servicio de domicilio eficiente y un programa de recompensas que valora tu preferencia. ¡Tu satisfacción es nuestra prioridad!</p>
+            </section>
+
+            <section class="popular-posts">
+                <h2>Enlaces de Interés</h2>
+                <ul>
+                    <li><a href="menu.html">Ver Menú Completo</a></li>
+                    <li><a href="servicios.html">Descubre Nuestras Promociones</a></li>
+                    <li><a href="contacto.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Opiniones de Clientes</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>Shori Express</h3>
+                    <p>La mejor parrilla a domicilio, ahora más cerca de ti.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shori Express. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
